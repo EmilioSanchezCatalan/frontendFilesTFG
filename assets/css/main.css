@@ -46,6 +46,9 @@ a.btn.btn-success:hover {
     font-size: 0.9em;
     border: 1px solid #2a624a
 }
+.col-form-label {
+  margin-right: 5px;
+}
 .form-check {
     margin-bottom: 15px;
 }
@@ -64,6 +67,7 @@ a.btn.btn-success:hover {
     position: relative;
     bottom: 75px;
 }
+@media (max-height: 700px) { .form-signin form { bottom: 0px; } }
 .form-signin input[type="text"] {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -184,4 +188,11 @@ a.btn.btn-success:hover {
   }
   .switch + .switch {
     margin-left: 1rem;
+  }
+
+
+  /* Responsive utils */
+
+  @media (max-width: 767px) {
+    .w-sm-50 { width: 50%; }
   }

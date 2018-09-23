@@ -23,87 +23,89 @@
           <i class="fas fa-cogs"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item text-danger" type="button" href="../index.html">Cerrar sesión</a>
+          <a class="dropdown-item text-danger" href="../index.html">Cerrar sesión</a>
         </div>
       </div>
     </nav>
 
     <!-- Content login -->
-    <section class="container mt-0 mt-sm-5" style="overflow-x: scroll">
-      <div class="btn-group mb-4" role="group" aria-label="Basic example">
-        <a type="button" class="btn btn-success" href="create_tfg.html">
+    <section class="container mt-4 mt-sm-5">
+      <div class="btn-group mb-4 w-100" role="group" aria-label="Basic example">
+        <a class="btn btn-success w-sm-50" href="create_tfg.html">
           <i class="fas fa-plus mr-2"></i>Añadir TFG
         </a>
-        <a type="button" class="btn btn-success">
+        <a class="btn btn-success w-sm-50" href="create_tfm.html">
           <i class="fas fa-plus mr-2"></i>Añadir TFM
         </a>
       </div>
-      <table class="table table-crud border m-0">
-        <thead>
-          <tr class="thead-light">
-            <th>Título</th>
-            <th>Tipo de Proyecto</th>
-            <th>Modalidad</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Venta de artículos online de Discover Úbeda</td>
-            <td>TFM</td>
-            <td>profesionalizante</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-eye"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-edit"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-trash-alt"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Estudio sobre el uso de las redes definidas por software en las redes de sensores</td>
-            <td>TFG</td>
-            <td>estudio técnico</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-eye"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-edit"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-trash-alt"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Diseño e implementación de un protocolo de comunicaciones entre sensores IoT y una plataforma cloud.</td>
-            <td>TFG</td>
-            <td>proyecto de ingeniería</td>
-            <td>
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-eye"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-edit"></i>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <i class="far fa-trash-alt"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <article style="overflow-x: scroll">
+          <table class="table table-crud border m-0">
+            <thead>
+              <tr class="thead-light">
+                <th>Título</th>
+                <th>Tipo de Proyecto</th>
+                <th>Modalidad</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Venta de artículos online de Discover Úbeda</td>
+                <td>TFM</td>
+                <td>profesionalizante</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-light" href="show_tfm.html">
+                      <i class="far fa-eye"></i>
+                    </a>
+                    <a class="btn btn-light" href="edit_tfm.html">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-light">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Estudio sobre el uso de las redes definidas por software en las redes de sensores</td>
+                <td>TFG</td>
+                <td>estudio técnico</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-light" href="show_tfg.html">
+                      <i class="far fa-eye"></i>
+                    </a>
+                    <a class="btn btn-light" href="edit_tfg.html">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-light">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Diseño e implementación de un protocolo de comunicaciones entre sensores IoT y una plataforma cloud.</td>
+                <td>TFG</td>
+                <td>proyecto de ingeniería</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-light" href="show_tfg.html">
+                      <i class="far fa-eye"></i>
+                    </a>
+                    <a class="btn btn-light" href="create_tfg.html">
+                      <i class="far fa-edit"></i>
+                    </a>
+                    <a class="btn btn-light">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </article>
     </section>
 
 
