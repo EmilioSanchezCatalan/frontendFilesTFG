@@ -195,4 +195,5 @@ a.btn.btn-success:hover {
 
   @media (max-width: 767px) {
     .w-sm-50 { width: 50%; }
+    .w-sm-100 { width: 100%; }
   }
