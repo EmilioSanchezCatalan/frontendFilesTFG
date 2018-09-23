@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
     
     <title>Projectos Uja</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </head>
   <body>
@@ -23,14 +23,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <a class="navbar-brand" href="index.html">
-          <img class="logo-img" src="../assets/img/logo_uja_negativo.png" alt="">
+          <img class="logo-img" src="../../assets/img/logo_uja_negativo.png" alt="">
       </a>
       <div class="btn-group ml-auto">
         <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-cogs"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item text-danger" href="../index.html">Cerrar sesión</a>
+          <a class="dropdown-item text-danger" href="../../index.html">Cerrar sesión</a>
         </div>
       </div>
     </nav>
@@ -49,8 +49,8 @@
           <div class="col-sm-12">
             <select type="password" class="form-control" id="typeSelect" placeholder="Tipo">
               <option>Selecciona tipo</option>
-              <option>General</option>
-              <option>Especifico</option>
+              <option>Universidad</option>
+              <option>Empresa</option>
             </select>
           </div>
         </div>
@@ -59,28 +59,17 @@
           <div class="col-sm-12">
             <select class="form-control" id="modeSelect" placeholder="Modalidad">
               <option>Selecciona modalidad</option>
-              <option>Proyecto de ingenieria</option>
-              <option>Trabajo técnico</option>
-              <option>Trabajo teórico/experimental </option>
+              <option>Investigar</option>
+              <option>Profesionalizante</option>
             </select>
           </div>
         </div>
-        <div class="form-group row">
-            <label for="menthionSelect" class="col-sm-12 col-form-label">Mención</label>
-            <div class="col-sm-12">
-              <select class="form-control" id="menthionSelect" placeholder="Modalidad">
-                <option>Selecciona la mención</option>
-                <option>Imagen y sonido</option>
-                <option>Sistemas de telecomunicación</option>
-              </select>
-            </div>
-          </div>
         <div class="form-group row">
           <div class="col-sm-4 col-md-3 col-lg-2">Segundo tutor</div>
           <div class="col-sm-8 col-md-9 col-lg-10">
             <span class="switch switch-sm">
               <input type="checkbox" class="switch" id="tutorCheck">
-              <label for="tutorCheck" id="prueba"></label>
+              <label for="tutorCheck" id="tutorCheck"></label>
             </span>
           </div>
         </div>
@@ -121,6 +110,34 @@
           </div>
         </div>
         <div class="form-group row">
+          <label for="dedicationSelect" class="col-sm-12 col-form-label">Dedicación</label>
+          <div class="col-sm-12">
+            <select class="form-control" id="dedicationSelect">
+              <option>Tiempo de dedicación</option>
+              <option>Tiempo completo</option>
+              <option>Tiempo parcial</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="dateInitInput" class="col-sm-12 col-form-label">Fecha de inicio</label>
+          <div class="col-sm-12 d-flex">
+            <input type="date" class="form-control" id="dateInitInput" placeholder="dd/mm/yyyy">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="dateEndInput" class="col-sm-12 col-form-label">Fecha de fin</label>
+          <div class="col-sm-12 d-flex">
+            <input type="date" class="form-control" id="dateEndInput" placeholder="dd/mm/yyyy">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputObjectives" class="col-sm-12 col-form-label">Conocimientos/requisitos</label>
+          <div class="col-sm-12">
+            <textarea class="form-control" id="inputObjectives"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
           <label for="inputObjectives" class="col-sm-12 col-form-label">Objetivos</label>
           <div class="col-sm-12">
             <textarea class="form-control" id="inputObjectives"></textarea>
@@ -136,35 +153,6 @@
           <label for="inputDocsAndForms" class="col-sm-12 col-form-label">Documentos y formatos</label>
           <div class="col-sm-12">
             <textarea class="form-control" id="inputDocsAndForms"></textarea>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-12">Capacidades</div>
-          <div class="col-sm-12 row">
-            <div class="form-check col-sm-6">
-              <input class="form-check-input" type="checkbox" id="skill1">
-              <label class="form-check-label form-check-label-custom" for="skill1">
-                TEL1 - Capacidad de construir, explotar y gestionar las redes, servicios, procesos y aplicaciones de telecomunicaciones, entendidas éstas como sistemas de captación, transporte, representación, procesado, almacenamiento, gestión y presentación de información multimedia, desde el punto de vista de los servicios telemáticos.
-              </label>
-            </div>
-            <div class="form-check col-sm-6">
-              <input class="form-check-input" type="checkbox" id="skill2">
-              <label class="form-check-label form-check-label-custom" for="skill2">
-                TEL2 - Capacidad para aplicar las técnicas en que se basan las redes, servicios y aplicaciones telemáticas, tales como sistemas de gestión, señalización y conmutación, encaminamiento y enrutamiento, seguridad (protocolos criptográficos, tunelado, cortafuegos, mecanismos de cobro, de autenticación y de protección de contenidos), ingeniería de tráfico (teoría de grafos, teoría de colas y teletráfico) tarificación y fiabilidad y calidad de servicio, tanto en entornos fijos, móviles, personales, locales o a gran distancia, con diferentes anchos de banda, incluyendo telefonía y datos.
-              </label>
-            </div>
-            <div class="form-check col-sm-6">
-              <input class="form-check-input" type="checkbox" id="skill3">
-              <label class="form-check-label form-check-label-custom" for="skill3">
-                TEL3 - Capacidad de construir, explotar y gestionar servicios telemáticos utilizando herramientas analíticas de planificación, de dimensionado y de análisis.
-              </label>
-            </div>
-            <div class="form-check col-sm-6">
-              <input class="form-check-input" type="checkbox" id="skill4">
-              <label class="form-check-label form-check-label-custom" for="skill4">
-                TEL4 - Capacidad de describir, programar, validar y optimizar protocolos e interfaces de comunicación en los diferentes niveles de una arquitectura de redes.
-              </label>
-            </div>
           </div>
         </div>
         <div class="form-group row">
@@ -246,6 +234,11 @@
           alert('Es necesario que el numero de alumnos sea mayor de 1');
         }
       }
+
+
     </script>
+
+    
+
   </body>
 </html>
