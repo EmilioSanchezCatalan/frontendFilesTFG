@@ -6,12 +6,25 @@
     font-size: 15px;
 }
 
-/* Clase boton en tag A */
-a.btn.btn-success {
-    color: #fff;
+.button-validate-abs {
+  position: absolute;
+  right: 24px;
+  z-index: 999;
 }
-a.btn.btn-success:hover {
-    color:#fff;
+
+.bar-validator {
+  display: flex;
+  justify-content: space-evenly;
+  background: #fff;
+}
+.bar-validator a{
+  width: 120px;
+
+}
+
+/* Clase boton en tag A */
+a.btn.btn-success, a.btn.btn-success:hover, a.btn.btn-danger, a.btn.btn-danger:hover {
+  color: #fff;
 }
 
 /* Tabla Ajustes*/
