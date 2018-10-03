@@ -14,8 +14,8 @@ $(document).ready(function(){
         initNoTeam($("#teamCheck"));
     });
 
-    $("#refreshNumberStudents").click(() =>{
-        generateSelect($("#inputNumberStudent"), $("#alumnoInput").closest(".form-group.row"));
+    $("#refreshNumberStudents").click(() => {
+        generateSelect($("#inputNumberStudent"), $("#alumno"));
     })
 });
 
@@ -38,10 +38,10 @@ function inputShowHiddenFunction(checkbox, input) {
  */
 function initNoTeam(checkbox) {
 if(!checkbox.is(':checked')) {
-    $("#alumnoInput").closest(".form-group.row").css("display", "flex");
-    $("select[id^='alumnoInputL']").closest(".form-group.row").remove();
+    $("#alumno").css("display", "flex");
+    $("div[id^='alumnoL']").remove();
 } else {
-    generateSelect($("#inputNumberStudent"), $("#alumnoInput").closest(".form-group.row"));
+    generateSelect($("#inputNumberStudent"), $("#alumno"));
 }
 } 
 
@@ -52,15 +52,43 @@ if(!checkbox.is(':checked')) {
  */
 function generateSelect(inputNumber, brotherElement) {
     if (inputNumber.val() > 1) {
-        $("select[id^='alumnoInputL']").closest(".form-group.row").remove();
+        $("div[id^='alumnoL']").remove();
         brotherElement.css("display", "none");
         for( let i = inputNumber.val(); i>=1; i--) {
-        var new_element = brotherElement.clone();
-        new_element.find("label").attr("for", "alumnoInputL" + i);
-        new_element.find(".number").text(i);
-        new_element.find("select").attr("id", "alumnoInputL" + i);
-        new_element.css("display", "flex");
-        brotherElement.after(new_element);
+            var new_element = `
+                <div class="row" id="alumnoL${i}">
+                    <div class="col-sm-12">
+                        Alumno<span class="number">${i}</span>
+                    </div>
+                    <div class="pl-3 pl-sm-5 col-sm-12">
+                        <div class="form-group row">
+                        <label for="alumnoNameInput${i}" class="col-sm-2 col-form-label">Nombre:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="name" id="alumnoNameInput${i}" class="form-control">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="alumnoDireccionInput${i}" class="col-sm-2 col-form-label">Dirección:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="address" id="alumnoDireccionInput${i}" class="form-control">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="alumnoDniInput${i}" class="col-sm-2 col-form-label">DNI:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="dni" id="alumnoDniInput${i}" class="form-control">
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                        <label for="alumnotlfInput${i}" class="col-sm-2 col-form-label">Teléfono:</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="tlf" id="alumnotlfInput${i}" class="form-control">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            brotherElement.after(new_element);
         }
     } else {
         alert('Es necesario que el numero de alumnos sea mayor de 1');

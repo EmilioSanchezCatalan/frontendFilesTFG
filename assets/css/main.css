@@ -59,9 +59,6 @@ a.btn.btn-success, a.btn.btn-success:hover, a.btn.btn-danger, a.btn.btn-danger:h
     font-size: 0.9em;
     border: 1px solid #2a624a
 }
-.col-form-label {
-  margin-right: 5px;
-}
 .form-check {
     margin-bottom: 15px;
 }

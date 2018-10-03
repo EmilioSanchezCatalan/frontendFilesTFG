@@ -1,3 +1,3 @@
 # frontendFilesTFG
 
-Recursos front-end para la aplicación web
+Recursos front-end para la aplicaciï¿½n web
